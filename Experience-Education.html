@@ -1,7 +1,5 @@
 <!-- Code written by Cameron Kupel -->
 <!DOCTYPE html>
-<!-- Code written by Cameron Kupel -->
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Cameron Kupel | Future Computer Scientist</title> <!-- To be changed in the future potentially -->
@@ -11,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="PortfolioProjectStyle.css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- Google Fonts API Reference for using the Roboto Font -->
 		<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet"> <!-- Social Media Icon Font Reference -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Icon Reference -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome Icon Reference -->
 		<!-- Bootstrap References -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -22,19 +22,19 @@
 	<body style="background-color:#1976D2">
 		<!-- Navigation Bar Start -->
 		<nav class="navbar navbar-dark" style="background-color:#BBDEFB">
-			<a class="navbar-brand" href="PortfolioProject.html" style="color:#2E2E2E">Cameron Kupel | Portfolio</a>
+			<a class="navbar-brand" href="index.html" style="color:#2E2E2E">Cameron Kupel | Portfolio</a>
 				<ul class="nav navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="PortfolioProject.html"><span class="glyphicon glyphicon-home"></span></a>
+						<a id="NavText" class="nav-link" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="PortfolioProject.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Basic Information</a>
+						<a id="NavText" class="nav-link" href="index.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Basic Information</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="Experience-Education.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-console"></span>&nbsp;Experience and Education</a>
+						<a id="NavText" class="nav-link" href="Experience-Education.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-console"></span>&nbsp;Experience and Education</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="FuturePlans.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-education"></span>&nbsp;Future Plans</a>
+						<a id="NavText" class="nav-link" href="FuturePlans.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-education"></span>&nbsp;Future Plans</a>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="https://github.com/camwowza"><span class="socicon-github"></span></a></li>
@@ -43,12 +43,345 @@
 				</ul>
 		</nav>
 		<!-- Navigation Bar End -->
-		<div id="JUMBOMUMBO" class="jumbotron">
-			<h1 style="text-align:center">Warning!</h1>
-			<p>This these pages are a work in progress!<br />
-			Don't mind the dust!<br />
-			More coming soon!</p>
+		<div class="alert alert-dismissible alert-danger container fluid-md-3">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong><span id="panelicons" class="glyphicon glyphicon-warning-sign" style="color:#A94442"></span>&nbsp; Warning!</strong> <a class="alert-link" style="text-align: center">This website is a work in progress!!</a> 
 		</div>
-		<div id="bork" class="container fluid-sm-3">
-			<a href="https://s-media-cache-ak0.pinimg.com/236x/29/16/f5/2916f559234204fbd572438b16c6cff3.jpg">bORK</a>
+		
+		<div id="JUMBOMUMBO" class="jumbotron text-center">
+			<h1 style="font-size:150px;text-align:center"><a href="#Experience" style="color:#EEEEEE">Experience</a> and <a href="#Education" style="color:#EEEEEE">Education</a></h1>
+			<p style="color:#EEEEEE;text-align:center;font-size:24px"><b>This is any kind of work and programming experience I have, as well as all of my educational experience with programming and other courses. It will be updated accordingly.</b></p>
 		</div>
+		
+		<br />
+	
+			<h1 id="Experience" style="font-size:50px;text-align:center;color:#EEEEEE"><span style="color:#EEEEEE" class="glyphicon glyphicon-console"></span>&nbsp;Experience</h1>
+		
+		<br />
+		
+		<!-- List groups, may be changed in the future -->
+		<div class="container fluid-sm-6 text-center">
+			<ul id="ListGroup" class="list-group">
+				<li class="list-group-item"><a href="#SeniorPictures">Senior Pictures</a></li>
+				<li class="list-group-item"><a href="#ZPPhotog">Zebra Print Photographer</a></li>
+				<li class="list-group-item"><a href="#CamWowPhoto">CamWow Photography</a></li>
+			</ul>
+		</div>
+		
+		<br />
+		
+		<!-- Lead paragraphs, corresponding to list groups -->
+		<div id="SeniorPictures" class="container col-sm-7">
+			<h1 style="text-align:center">Senior Pictures</h1>
+			<p style="font-size:22px">Within the current bit into my high school career, I have been an amateur photographer<br />
+		Multiple people have came to me asking to do their senior photos for a slight sum of cash, and I have kindly accepted the offers.<br />
+		This was amazing for me, feeling I was not ready at all to do such a job.<br />
+		I have gotten extremely positive reviews from these mini jobs.<br />
+		This was a huge milestone for me, just starting out in photography and being asked to do others senior photos.</p>
+		</div>
+		
+		<div class="container col-sm-5">
+			<div class="panel panel-default">
+				<div class="panel-heading text-center">
+					<h3 class="panel-title">Additional Information</h3>
+				</div>
+				<div class="panel-body">
+					- This taught me how to work better in an independant environment
+					<br />
+					- This increased my ability of being able to interpret customers requirments
+					<br />
+					- Increased sociability skills
+					<br />
+				</div>
+			</div>
+		</div>
+		<!-- Space filler -->
+		<div id="JUMBOMUMBO" class="jumbotron container col-sm-6"></div>
+		<div id="JUMBOMUMBO" class="jumbotron container col-sm-6"></div>
+		
+		<br />
+		
+		<div id="ZPPhotog" class="container col-sm-7">
+			<h1 style="text-align:center">Zebra Print Photographer</h1>
+			<p style="font-size:22px">At the end of my freshman year, I was approached by the newspaper advisor at Wayne Memorial High School.<br />
+			She asked if I would like to me a part of the newspaper staff, and be the go to photographer. I quickly picked the offer up right away.<br />
+			Since that moment, I have taken two of the cover photos for the paper out of the three papers printed, as well as on various pages througout the paper.</p>
+		</div>
+		<div class="container col-sm-5">
+			<div class="panel panel-default">
+				<div class="panel-heading text-center">
+					<h3 class="panel-title">Additional Information</h3>
+				</div>
+				<div class="panel-body">
+					- This improved my skills in a team setting, working with newspaper reporters and editors
+					<br />
+					- Increased sociability skills
+					<br />
+					- Increased focus in distracting settings
+					<br />
+				</div>
+			</div>
+		</div>
+		<!-- Space filler -->
+		<div id="JUMBOMUMBO" class="jumbotron container col-sm-6"></div>
+		<div id="JUMBOMUMBO" class="jumbotron container col-sm-6"></div>
+		
+		<br />
+		
+		<div id="CamWowPhoto" class="container col-sm-7">
+			<h1 style="text-align:center"><a style="color:#2E2E2E" href="camwowza.github.io/camwowphoto">CamWow Photography Webpage</a></h1>
+			<p style="font-size:22px">The summer after my freshman year, I started getting into web development more and more.<br />
+			My friend <a style="font-size:22px" id="KWebsite" href="http://kszalai.github.io" title="Check out his website!">Kyle Szalai</a> showed me GitHub, and he coded my photography website. I loved how it looked, and I maintained the look.<br />
+			I was intrigued by this, and decide to start learning on my own. Using the site he made me, and his own knowledge as a guide.<br />
+			I picked up the basics of HTML quickly. As well as CSS in the future. I am now going on to learn about other programming languages, and how they differ from one another.<br />
+		</div>
+		<div class="container col-sm-5">
+			<div class="panel panel-default">
+				<div class="panel-heading text-center">
+					<h3 class="panel-title">Additional Information</h3>
+				</div>
+				<div class="panel-body">
+					- Increased skills in HTML
+					<br />
+					- Increased skills in CSS
+					<br />
+					- Increased skills in research
+					<br />
+					- Increased knowledge in implementing Bootstrap references
+					<br />
+				</div>
+			</div>
+		</div>
+		<!-- Space Filler -->
+		<div id="JUMBOMUMBO" class="jumbotron container col-sm-6"></div>
+		<div id="JUMBOMUMBO" class="jumbotron container col-sm-6"></div>
+		
+		<!-- Education -->
+		<div class="container col-sm-12">
+			<h1 id="Education" style="color:#EEEEEE;font-size:50px;text-align:center"><span style="color:#EEEEEE" class="glyphicon glyphicon-education"></span>&nbsp;Education</h1>
+			
+			<br />
+			
+			<p style="color:#EEEEEE;font-size:22px;text-align:center"><a id="Website" href="http://www.wwcsd.net/schools/high-schools/wayne-memorial-high-school/">Wayne Memorial High School</a> Sophomore | Class of 2019</p>
+			
+			<br />
+			
+			<div class="container fluid-sm-6">
+				<ul id="ListGroup" class="list-group">
+					<li class="list-group-item"><a href="#FreshmanYear">Freshman</a></li>
+					<li class="list-group-item"><a href="#SophomoreYear">Sophomore</a></li>
+					<li class="list-group-item"><a href="#JuniorYear" class="nav-link disabled">Junior</a></li>
+					<li class="list-group-item"><a href="#SeniorYear" class="nav-link disabled">Senior</a></li>
+				</ul>
+				
+				<h1 id="FreshmanYear">Freshman Year</h1>
+			</div>
+				
+			<div class="container col-sm-6 text-center">
+			<!-- Fall Semester Table -->
+			<h2 id="FallSemester9">Fall Semester</h2>
+				<table id="FallSemesterTable"class="table">
+					<thead>
+						<tr>
+							<th style="text-align:center">Period</th>
+							<th style="text-align:center">Course</th>
+							<th style="text-align:center">Semester Grade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">1</td>
+							<td>Algebra 1A</td>
+							<td>A</td>
+						</tr>
+						<tr>
+							<td scope="row">2</td>
+							<td>Civics</td>
+							<td>B-</td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>English 9A</td>
+							<td>A-</td>
+						</tr>
+						<tr>
+							<td scope="row">4</td>
+							<td>Essential Health and Life Skills</td>
+							<td>B</td>
+						</tr>
+						<tr>
+							<td scope="row">5</td>
+							<td>Marketing 1</td>
+							<td>C-</td>
+						</tr>
+						<tr>
+							<td scope="row">6</td>
+							<td>Science 9A</td>
+							<td>A-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="container col-sm-6 text-center">	
+				<h2 id="WinterSemester9">Winter Semester</h2>
+			</div>
+			<div class="container col-sm-6">
+				<table id="WinterSemesterTable" class="table">
+					<thead>
+						<tr>
+							<th style="text-align:center">Period</th>
+							<th style="text-align:center">Course</th>
+							<th style="text-align:center">Semester Grade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td scope="row">1</td>
+							<td>Algebra 1B</td>
+							<td>A-</td>
+						</tr>
+						<tr>
+							<td scope="row">2</td>
+							<td>Economics</td>
+							<td>B</td>
+						</tr>
+						<tr>
+							<td scope="row">3</td>
+							<td>English 9B</td>
+							<td>A</td>
+						</tr>
+						<tr>
+							<td scope="row">4</td>
+							<td>Science 9B</td>
+							<td>A-</td>
+						</tr>
+						<tr>
+							<td scope="row">5</td>
+							<td>Culinary Skills</td>
+							<td>C+</td>
+						</tr>
+						<tr>
+							<td scope="row">6</td>
+							<td>General Astronomy</td>
+							<td>A</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="container col-sm-6">
+				<h2 id="Elective9" style="text-align:center"><u>Essential Health and Life Skills</u></h2>
+				<p id="Elective9">THIS TAUGHT ME ABOUT DICC N SHIT</p>
+				<h2 id="Elective9" style="text-align:center"><u>Marketing 1</u></h2>
+				<p id="Elective9">THIS TAUGHT ME HOW TO SELL SHIT BOI</p>
+			</div>
+			<div class="container col-sm-6">
+				<h2 id="Elective9" style="text-align:center"><u>Culinary Skills</u></h2>
+				<p id="Elective9">THIS TAUGHT ME HOW TO KOOK BOI</p>
+				<h2 id="Elective9" style="text-align:center"><u>General Astronomy</u></h2>
+				<p id="Elective9">THIS TAUGHT ME ABOUT SPACE N SHIT</p>
+			</div>
+			<h1 id="SophomoreYear">Sophomore Year</h1>
+			<div class="container col-sm-6 text-center">
+				<h2 id="FallSemester10">Fall Semester</h2>
+					<table id="FallSemesterTable" class="table">
+						<thead>
+							<tr>
+								<th style="text-align:center">Period</th>
+								<th style="text-align:center">Course</th>
+								<th style="text-align:center">Semester Grade</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td scope="row">1</td>
+								<td>Accelerated Geometry A</td>
+								<td>N/A</td>
+							</tr>
+							<tr>
+								<td scope="row">2</td>
+								<td>Personal Fitness</td>
+								<td>N/A</td>
+							</tr>
+							<tr>
+								<td scope="row">3</td>
+								<td>Journalism</td>
+								<td>N/A</td>
+							</tr>
+							<tr>
+								<td scope="row">4</td>
+								<td>World History and Geography A</td>
+								<td>N/A</td>
+							</tr>
+							<tr>
+								<td scope="row">5</td>
+								<td>Accelerated Biology A</td>
+								<td>N/A</td>
+							</tr>
+							<tr>
+								<td scope="row">6</td>
+								<td>English 10A</td>
+								<td>N/A</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="container col-sm-6">
+					<h2 id="WinterSemester10">Winter Semester</h2>
+						<table id="WinterSemesterTable" class="table">
+							<thead>
+								<tr>
+									<th style="text-align:center">Period</th>
+									<th style="text-align:center">Course</th>
+									<th style="text-align:center">Semester Grade</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td scope="row">1</td>
+									<td>Accelerated Geometry B</td>
+									<td>N/A</td>
+								</tr>
+								<tr>
+									<td scope="row">2</td>
+									<td>Java Programming</td>
+									<td>N/A</td>
+								</tr>
+								<tr>
+									<td scope="row">3</td>
+									<td>Computer Science 1 HS</td>
+									<td>N/A</td>
+								</tr>
+								<tr>
+									<td scope="row">4</td>
+									<td>World History and Geography B</td>
+									<td>N/A</td>
+								</tr>
+								<tr>
+									<td scope="row">5</td>
+									<td>Accelerated Biology B</td>
+									<td>N/A</td>
+								</tr>
+								<tr>
+									<td scope="row">6</td>
+									<td>English 10B</td>
+									<td>N/A</td>
+								</tr>
+							</tbody>
+						</table>
+				</div>
+				<div class="container col-sm-6">			
+					<h2 id="Elective10" style="text-align:center"><u>Journalism</u></h2>
+					<p id="Elective10">This course is the basics of the journalism, the activity of writing for newspapers, magazines, etc.
+					This course sparked my interest and made me aware of what journalists really do to get news out to us, as well as 
+					how long the process takes, as well as how to write different types of articles found in newspapers.</p>
+					<h2 id="Elective10" style="text-align:center"><u>Personal Fitness</u></h2>
+					<p id="Elective10">This is a required course for graduation. It teaches students the basics of working out, goal setting, and sports such as badmitton,
+					swimming, tennis, and volleyball. This course taught me how to set limits for my self in a physical aspect, as well as a better understanding on goal
+					setting.</p>
+				</div>
+				<div class="container col-sm-6">
+					<h2 id="Elective10" style="text-align:center"><u>Computer Science 1 HS</u></h2>
+					<p id="Elective10" style="text-align:center">Details to be given after June 15th, 2017!</p>
+					<h2 id="Elective10" style="text-align:center"><u>Java Programming</u></h2>
+					<p id="Elective10" style="text-align:center">Details to be given after June 15th, 2017!</p>
+				</div>

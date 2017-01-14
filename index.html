@@ -6,9 +6,11 @@
 		<meta charset="UTF-8"> <!-- This defines the character set (Unicode, ASCII, etc.) that we're using -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This allows the website to scale to mobile very nicely -->
 		<meta name="theme-color" content="#455A64"> <!-- This allows for a custom color in the top bar on Chrome for Android -->
-		<link rel="stylesheet" type="text/css" href="PortfolioProjectStyle.css" />
+		<link rel="stylesheet" type="text/css" href="PortfolioProjectStyle.css" /> <!-- External Style Sheet -->
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> <!-- Google Fonts API Reference for using the Roboto Font -->
 		<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet"> <!-- Social Media Icon Font Reference -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Icon Reference -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome Icon Reference -->
 		<!-- Bootstrap References -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -20,19 +22,19 @@
 	<body style="background-color:#1976D2">
 		<!-- Navigation Bar Start -->
 		<nav class="navbar navbar-dark" style="background-color:#BBDEFB">
-			<a class="navbar-brand" href="PortfolioProject.html" style="color:#2E2E2E">Cameron Kupel | Portfolio</a>
+			<a class="navbar-brand" href="index.html" style="color:#2E2E2E">Cameron Kupel | Portfolio</a>
 				<ul class="nav navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="PortfolioProject.html"><span class="glyphicon glyphicon-home"></span></a>
+						<a id="NavText" class="nav-link" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#BasicInfo" style="color:#2E2E2E"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Basic Information</a>
+						<a id="NavText" class="nav-link" href="#BasicInfo" style="color:#2E2E2E"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Basic Information</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="Experience-Education.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-console"></span>&nbsp;Experience and Education</a>
+						<a id="NavText" class="nav-link" href="Experience-Education.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-console"></span>&nbsp;Experience and Education</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="FuturePlans.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-education"></span>&nbsp;Future Plans</a>
+						<a id="NavText" class="nav-link" href="FuturePlans.html" style="color:#2E2E2E"><span class="glyphicon glyphicon-education"></span>&nbsp;Future Plans</a>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="https://github.com/camwowza"><span class="socicon-github"></span></a></li>
@@ -43,10 +45,10 @@
 		<!-- Navigation Bar End -->
 		<!-- #BasicInfo Start -->
 			<div id="BasicInfo" class="container-fluid bg-1 text-center">
-				<h1 style="font-size:50px;color:#2E2E2E">Cameron Kupel</h1>
-				<p style="font-size:15px;color:#2E2E2E">Amateur Photographer | Future Computer Scientist
-				<p style="font-size:15px;color:#2E2E2E">Wayne Memorial High School Sophomore</p>
-				<p style="font-size:15px:color:#2E2E2E"><span class="glyphicon glyphicon-envelope" style="color:#2E2E2E"></span>&nbsp; | cameronkupel880@gmail.com</p>
+				<h1 style="font-size:50px;color:#EEEEEE">Cameron Kupel</h1>
+				<p style="font-size:15px;color:#EEEEEE">Amateur Photographer | Future Computer Scientist
+				<p style="font-size:15px;color:#EEEEEE">Wayne Memorial High School Sophomore</p>
+				<p style="font-size:15px;color:#EEEEEE"><span class="glyphicon glyphicon-envelope" style="color:#EEEEEE"></span>&nbsp; | cameronkupel880@gmail.com</p>
 			</div>
 			<div class="alert alert-dismissible alert-danger container fluid-md-3">
 				<button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -54,10 +56,10 @@
 			</div>
 			<div id="JUMBOMUMBO" class="jumbotron">
 				<h1 style="font-size:150px;text-align:center">Salutations</h1>
-				  <p style="font-size:24px;text-align:center;color:#212121">This website is a portfolio on all my basic personal information, work and programming experience, educational information, and the plans I have for the far future.</p>
+				  <p style="font-size:24px;text-align:center;color:#EEEEEE"><b>This website is a portfolio on all my basic personal information, work and programming experience, educational information, and the plans I have for the far future.</b></p>
 			</div>
 			
-			<br />
+			<h1 style="color:#EEEEEE;font-size:50px;text-align:center"><span class="glyphicon glyphicon-info-sign" style="color:#EEEEEE"></span>&nbsp;Basic Information</h1>
 			
 			<!-- Tiles: Flip when hover -->
 			<div id="Tile" class="card card-inverse card-primary text-s-center flip-container col-sm-3" ontouchstart="this.classList.toggle('onclick');">
@@ -103,15 +105,15 @@
 			</div>
 		</div>
 		<!-- Social Media Links -->
-		<p style="text-align:center;color:#2E2E2E">Check out my Social Media and GitHub page! <br />
-			<a id="SocialM" href="https://github.com/camwowza"><span style="color:#2E2E2E" class="socicon-github"></span>&nbsp;Github |</a>
-			<a id="SocialM" href="https://instagram,com/cameronkupel"><span style="color:#2E2E2E"class="socicon-instagram"></span>&nbsp;Instagram |</a>
-			<a id="SocialM" href="https://twitter.com/Camwowza_dank"><span style="color:#2E2E2E"class="socicon-twitter"></span>&nbsp;Twitter |</a>
+		<p style="text-align:center;color:#EEEEEE">Check out my Social Media and GitHub page! <br />
+			<a id="SocialM" href="https://github.com/camwowza"><span style="color:#EEEEEE" class="socicon-github"></span>&nbsp;Github |</a>
+			<a id="SocialM" href="https://instagram,com/cameronkupel"><span style="color:#EEEEEE"class="socicon-instagram"></span>&nbsp;Instagram |</a>
+			<a id="SocialM" href="https://twitter.com/Camwowza_dank"><span style="color:#EEEEEE"class="socicon-twitter"></span>&nbsp;Twitter |</a>
 		</p>
 			
 		<!-- Footer Start -->
 		<div id="footer" class="footer container-fluid-md-9">
-			<h6 style="text-align:center" style="color:#2E2E2E">Last Updated:
+			<h6 style="text-align:center" style="color:#EEEEEE">Last Updated:
 				<script language="JavaScript" type="text/javascript" style="color:#2E2E2E">
 				document.write(document.lastModified);
 				</script>

@@ -1,5 +1,15 @@
 h1 {
 	padding: 0px 10px 10px 10px;
+	color: #EEEEEE;
+}
+h2 {
+	color: #EEEEEE;
+}
+h6 {
+	color: #EEEEEE;
+}
+div < h1 {
+	padding-bottom: 50px;
 }
 span {
 	color: #2E2E2E;
@@ -13,28 +23,21 @@ div > p {
 	margin-top: 40px;
 	padding: 15px 15px;
 }
-#user {
-	color:#2E2E2E;
+#NavText {
+	padding-top: 11px;
 }
-#panelicons {
-	color:#2E2E2E;
-}
-#BasicInfoBody {
-	background-color:#607D8B;
-	padding: 15px 15px;
-}
-#BasicInfoWell {
-	background-color:#CFD8DC;
+#NavRightIcons {
+	margin-bottom: 5px;
 }
 #SocialM {
-	color:#2E2E2E;
+	color:#EEEEEE;
 }
 h3 {
-	color:#2E2E2E;
+	color:#EEEEEE;
 }
 #JUMBOMUMBO {
 	background-color:#1976D2;
-	color: #2E2E2E;
+	color: #EEEEEE;
 }
 /* Flipping Animation */
 .flip-container {
@@ -72,6 +75,7 @@ h3 {
 .back {
 	transform: rotateY(180deg);
 }
+/* End of flippable Cards */
 #InterestsTile {
 	background-color: #BBDEFB;
 	border-color: #BBDEFB;
@@ -89,6 +93,56 @@ h3 {
 	border-color: #BBDEFB;
 	border-radius: 0px 0px 0px 0px;
 }
-#bork {
-	color: #FFFFFF;
+/* Education and Experience Section */
+#ListGroup {
+	margin-left: 270px;
+	margin-right: 270px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+#SeniorPictures {
+	background-color: #BBDEFB;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
+#ZPPhotog {
+	background-color: #BBDEFB;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
+#CamWowPhoto {
+	background-color: #BBDEFB;
+	border-radius: 5px;
+	color: #2E2E2E
+}
+#Website {
+	color: #EEEEEE;
+}
+#KWebsite {
+	color: #2E2E2E;
+}
+#Semester1 {
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	color: #2E2E2E;
+	margin-left: 278px;
+}
+#FallSemesterTable, #WinterSemesterTable {
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	color: #000000;
+	text-align: center;
+}
+#FallSemester9, #WinterSemester9, #FallSemester10, #WinterSemester10 {
+	color: #EEEEEE;
+	padding-bottom: 50px;
+	text-align: center;
+}
+#FreshmanYear, #SophomoreYear {
+	color: #EEEEEE;
+	font-size: 50px;
+	text-align: center;
+}
+#Elective9, #Elective10 {
+	color: #EEEEEE;
 }
