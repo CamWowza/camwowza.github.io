@@ -146,3 +146,16 @@ h3 {
 #Elective9, #Elective10 {
 	color: #EEEEEE;
 }
+
+#Major, #Minor {
+	background-color: #BBDEFB;
+	color: #2E2E2E;
+}
+
+#Major {
+	border-radius: 10px 0px 0px 10px;
+}
+
+#Minor {
+	border-radius: 0px 10px 10px 0px;
+}
